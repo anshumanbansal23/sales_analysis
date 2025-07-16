@@ -85,4 +85,32 @@ Drill down into each transaction with slicers for:
 
 ## 📂 Project Structure
 
+sales_analysis_dashboard/
+├── 1.png                  # Top/Bottom products visualization
+├── 2.png                  # Trend, map, and profit-sales relationship
+├── 3.png                  # Date-based comparison
+├── 4.png                  # Raw order table visual
+├── er_model.png           # Data model (ER diagram)
+├── Project Requirements.pptx  # Scope and use cases
+└── README.md              # Project overview
+
+--
+## 🔍 Key Learnings
+Creating optimized data models for BI tools
+
+Designing interactive visuals with slicers and filters
+
+Using DAX for complex KPI derivation
+
+Business storytelling with multi-layered insights
+--
+
+
+## ✅ How to Use
+Open the .pbix file in Power BI Desktop. Use slicers to explore time-based and categorical insights.
+--
+## 📬 Contact
+Made by Anshuman Bansal
+🔗 GitHub: @anshumanbansal23
+
 
