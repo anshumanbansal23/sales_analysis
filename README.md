@@ -1,97 +1,111 @@
 📊 Sales Analysis Dashboard – Power BI Project
-Welcome to my Sales Analysis Dashboard project! 🚀
-This interactive dashboard was built using Power BI to turn raw sales data into meaningful business insights. It helps you explore top-selling products, track trends over time, understand customer behavior, and compare sales performance across different periods.
+An interactive Power BI dashboard that provides deep insights into sales, profit, quantity sold, promotions, and customer behavior across time periods and product categories. This project is built to help stakeholders make informed, data-driven business decisions.
 
-🧐 What's This Project About?
-Running a business without understanding your data is like flying blind. This dashboard solves that by giving you a complete picture of:
+🧭 Project Objectives
+This project aims to deliver a comprehensive view of business performance through the following:
 
-📦 Best and worst performing products (by sales, profit, quantity sold)
+📦 Identify Top & Bottom 5 Products by Sales, Profit, and Quantity
 
-📈 Sales trends across days, months, and years
+📈 Analyze Sales Trends over different time periods (daily, monthly, quarterly, annually)
 
-💰 How sales relate to profit
+💰 Explore the relationship between Profit and Net Sales
 
-🔁 Comparing performance between two custom date ranges
+🧮 Compare performance across two selected time ranges
 
-🎯 Promotions and how much discount was really given
+🎯 Visualize Average Discount offered under various promotion types
 
-🏙️ Where your customers are buying from (sales by city)
+🏙️ Track Sales by City
 
-📋 And yes, you can dig into individual orders with smart filters!
+🗃️ Provide detailed order-level drilldown with filters for Customer, Product, Date, and Promotions
 
-Whether you're a business analyst, data enthusiast, or someone learning Power BI, this project offers a great starting point.
+🏗️ Data Model (Star Schema)
 
-📐 Data Model Design (Star Schema)
-This project uses a star schema to keep things clean and fast.
+Fact Table:
 
+Order details (CustomerID, ProductID, PromotionID, Net Sales, Profit, Units Sold, etc.)
 
-Main Components:
-Fact Table: Stores all transactions (sales, discounts, profit, etc.)
+Dimension Tables:
 
-Dimension Tables: Info about products, customers, promotions, and dates
+Dim Product: Product info (Name, Line, Price)
 
-Measure Table: Pre-calculated metrics like quantity sold
+Dim Customers: Customer info (City, State, Contact)
 
-Everything is connected to give you flexibility when slicing and filtering data.
+Dim Promotion: Promotion type and discount
 
-🧩 Key Dashboard Features
-🔝 Top & Bottom Products
-See the top 5 and bottom 5 products across three metrics: sales, quantity sold, and profit.
+Date Tables: Separate date dimensions for different comparisons
 
+Measure Table: Derived metrics like Quantity Sold
 
-📅 Sales Trends & Period Comparison
-Track how sales change over time — daily, monthly, yearly — and compare any two custom periods side-by-side.
-
-
-
-🌍 Location & Promotion Insights
-Explore where your customers are buying from with a city map
-
-Understand which promotions drove the most sales and how much discount was given
+📁 Key Features in the Dashboard
+🔝 Top/Bottom 5 Products Analysis
+Metric	Top 5	Bottom 5
+Sales	Apple iPhone 14, MacBook Air, Sony Bravia TV	Colgate, Dove, Nivea
+Quantity	iPhone 14, Raymond Suit, Zara Shirt	Borosil Set, FabIndia Kurta
+Profit	iPhone 14, MacBook Air, Sony Bravia	Tupperware, L'Oreal, Dove
 
 
-🧾 Order-Level Drilldown
-Need to zoom in on a specific customer, product, or promotion?
-The table view lets you filter and explore every order in detail.
+🗓️ Trend Analysis & Period Comparison
+Tracks weekly and monthly sales spikes
+
+Compare two custom time periods using slicers for:
+
+Total Sales
+
+Profit
+
+Quantity Sold
 
 
-🛠️ Tools & Tech Used
-Tool	Why I Used It
-Power BI	For building the dashboard and visuals
-DAX	To calculate profit, quantity sold, discounts, etc.
-Star Schema	For a well-organized, fast data model
-Excel/CSV	As the source of the raw data
 
-🗂️ Folder Structure
+🌍 Geographic & Promotion-Based Insights
+Sales by City using interactive map
+
+Analyze promotion effectiveness via average discount
+
+
+📋 Order-Level Details with Filters
+Drill down into each transaction with slicers for:
+
+Product Name
+
+Promotion Category
+
+Customer Name
+
+Date
+
+
+🧪 Tools Used
+Tool	Purpose
+Power BI	Data modeling, DAX measures, dashboard creation
+DAX	Calculated columns and KPIs
+Excel/CSV	Source data files
+Star Schema	Optimized data structure for BI
+
+📂 Project Structure
 bash
 Copy
 Edit
 sales_analysis_dashboard/
-├── 1.png                  # Top/Bottom product charts
-├── 2.png                  # Sales trends and city-wise map
-├── 3.png                  # Period comparison
+├── 1.png                  # Top/Bottom products visualization
+├── 2.png                  # Trend, map, and profit-sales relationship
+├── 3.png                  # Date-based comparison
 ├── 4.png                  # Raw order table visual
-├── er_model.png           # Data model schema
-├── Project Requirements.pptx  # All requirements in one place
-└── README.md              # You're reading it :)
-💡 What I Learned
-How to build dynamic dashboards using Power BI
+├── er_model.png           # Data model (ER diagram)
+├── Project Requirements.pptx  # Scope and use cases
+└── README.md              # Project overview
+🔍 Key Learnings
+Creating optimized data models for BI tools
 
-Creating flexible, responsive layouts for stakeholders
+Designing interactive visuals with slicers and filters
 
-Writing DAX to create calculated fields and KPIs
+Using DAX for complex KPI derivation
 
-Making data tell a story with visual design and interaction
+Business storytelling with multi-layered insights
 
-📥 How to Use It
-Download the .pbix file (Power BI Desktop required)
+✅ How to Use
+Open the .pbix file in Power BI Desktop. Use slicers to explore time-based and categorical insights.
 
-Open it and explore the dashboard
-
-Use the slicers and filters to play around with the data
-
-It’s all yours to explore!
-
-🙋‍♂️ Want to Connect?
-Made with  by Anshuman Bansal
-📍 GitHub: @anshumanbansal23
+📬 Contact
+Made by Anshuman Bansal
+🔗 GitHub: @anshumanbansal23
